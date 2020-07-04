@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
 import { AnimalComponent } from './components/animal/animal.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavComponent } from './components/nav/nav.component';
+import { InfoComponent } from './components/info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    AnimalComponent
+    AnimalComponent,
+    LoginComponent,
+    HomeComponent,
+    NavComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
