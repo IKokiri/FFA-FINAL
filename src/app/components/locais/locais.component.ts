@@ -11,6 +11,56 @@ export class LocaisComponent implements OnInit {
 
   locais = [
     {
+      id:1,
+      cidade:"Contagem",
+      imagem:"../../../assets/img/locais/local.jpg",
+      ocupado:false,
+    },  
+
+    {
+      id:1,
+      cidade:"Contagem",
+      imagem:"../../../assets/img/locais/local.jpg",
+      ocupado:false,
+    },  
+
+    {
+      id:1,
+      cidade:"Contagem",
+      imagem:"../../../assets/img/locais/local.jpg",
+      ocupado:false,
+    },  
+
+    {
+      id:1,
+      cidade:"Contagem",
+      imagem:"../../../assets/img/locais/local.jpg",
+      ocupado:false,
+    },  
+
+    {
+      id:1,
+      cidade:"Contagem",
+      imagem:"../../../assets/img/locais/local.jpg",
+      ocupado:false,
+    },  
+
+    {
+      id:1,
+      cidade:"Contagem",
+      imagem:"../../../assets/img/locais/local.jpg",
+      ocupado:false,
+    },  
+
+    {
+      id:1,
+      cidade:"Contagem",
+      imagem:"../../../assets/img/locais/local.jpg",
+      ocupado:false,
+    },  
+
+    {
+      id:1,
       cidade:"Contagem",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
