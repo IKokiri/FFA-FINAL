@@ -1,9 +1,16 @@
-<div class="form">
-    <input type="text" name="local" id="local" placeholder="Local">
-    <input type="datetime" name="checkin" id="checkin" placeholder="Check-In">
-    <input type="datetime" name="checkout" id="checkout" placeholder="Check-Out">
-    <app-animal *ngFor="let animal of animais" path="{{animal.path}}" tipo="{{animal.tipo}}"></app-animal>
-    
-
-    
-</div>
+<form>
+    <div class="form-row">    
+        <div class="col">
+            <input class="form-control" type="text" name="local" id="local" placeholder="Local">
+        </div>
+        <div class="col">
+            <input class="form-control" type="datetime" name="checkin" id="checkin" placeholder="Check-In">
+        </div>
+        <div class="col">
+            <input class="form-control" type="datetime" name="checkout" id="checkout" placeholder="Check-Out">
+        </div>
+    </div>
+    <div class="row">
+        <app-animal class="col-4 text-center" *ngFor="let animal of animais" sound="{{animal.sound}}" path="{{animal.path}}" tipo="{{animal.tipo}}"></app-animal>
+    </div>
+</form>

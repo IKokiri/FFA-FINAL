@@ -12,15 +12,18 @@ export class FormComponent implements OnInit {
   animais = [
     {
       tipo:"Cachorro",
-      path:"../../../assets/img/animais/dog.png"
+      path:"../../../assets/img/animais/dog.png",
+      sound:"../../../assets/sons/animais/dog.mp3"
     },
     {
       tipo:"Gato",
-      path:"../../../assets/img/animais/cat.png"
+      path:"../../../assets/img/animais/cat.png",
+      sound:"../../../assets/sons/animais/cat.mp3"
     },
     {
       tipo:"Papagaio",
-      path:"../../../assets/img/animais/parrot.png"
+      path:"../../../assets/img/animais/parrot.png",
+      sound:"../../../assets/sons/animais/parrot.mp3"
     },
   ]
 

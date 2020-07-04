@@ -11,8 +11,17 @@ export class AnimalComponent implements OnInit {
 
   @Input() tipo;
   @Input() path;
+  @Input() sound;
 
   ngOnInit(): void {
+  }
+
+
+  som(){
+    let audio = new Audio();
+    audio.src = this.sound;
+    audio.load();
+    audio.play();
   }
 
 }
