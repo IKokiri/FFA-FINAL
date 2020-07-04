@@ -1,3 +1,13 @@
 app-animal{
-    margin-top:1%
+    margin-top:4%
 }
+input {
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+} 
+
+input:focus, select:focus {
+    box-shadow: 4px 4px 4px 0 !important;;
+    outline: 0 !important;
+} 
