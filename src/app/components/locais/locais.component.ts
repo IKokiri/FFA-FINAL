@@ -83,7 +83,7 @@ export class LocaisComponent implements OnInit {
   }
 
   onChange(event) {
-    console.log(event)
+    
     this.filtro = this.locais.filter(local => {
       
       if(event.term == "" && event.animal == ""){
@@ -99,10 +99,6 @@ export class LocaisComponent implements OnInit {
         if (local.animaisPermitidos.includes(event.animal) && local.cidade.toLowerCase().indexOf(event.term) > -1)
           return local.cidade;
       }
-
-      
-
-
     });
   }
 
