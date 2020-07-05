@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class FormComponent implements OnInit {
 
   constructor() { }
+  
+  term: string;
   
   animais = [
     {
@@ -28,6 +30,14 @@ export class FormComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+   
+  }
+
+  
+  @Output() respostaTerm = new EventEmitter();
+
+  feedback(event) {
+    this.respostaTerm.emit(event);
   }
 
 }

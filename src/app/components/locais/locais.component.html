@@ -1,3 +1,7 @@
+<div class="col-6 offset-3">
+    <app-form (respostaTerm)="onChange($event)"></app-form>
+</div>
+
 <div class="row">
-    <app-local class="col-3 text-center" *ngFor="let local of locais" imagem="{{local.imagem}}" cidade="{{local.cidade}}"></app-local>
+    <app-local class="col-md-3 text-center" *ngFor="let local of filtro" imagem="{{local.imagem}}" ocupado="{{local.ocupado}}" cidade="{{local.cidade}}"></app-local>
 </div>

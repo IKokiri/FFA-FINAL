@@ -11,6 +11,7 @@ export class LocalComponent implements OnInit {
   
   @Input() cidade;
   @Input() imagem;
+  @Input() ocupado;
 
 
   somGo(){
