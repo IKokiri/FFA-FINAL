@@ -13,6 +13,6 @@
         </div>
     </div>
     <div class="row">
-        <app-animal class="col-4 text-center" *ngFor="let animal of animais" sound="{{animal.sound}}" path="{{animal.path}}" tipo="{{animal.tipo}}"></app-animal>
+        <app-animal class="col-4 text-center"  *ngFor="let animal of animais" (click)="setAnimal(animal.tipo)" sound="{{animal.sound}}" path="{{animal.path}}" tipo="{{animal.tipo}}"></app-animal>
     </div>
 </form>

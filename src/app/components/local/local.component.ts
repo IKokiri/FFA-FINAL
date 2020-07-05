@@ -12,6 +12,7 @@ export class LocalComponent implements OnInit {
   @Input() cidade;
   @Input() imagem;
   @Input() ocupado;
+  @Input() animaisPermitidos = [];
 
 
   somGo(){
@@ -26,6 +27,7 @@ export class LocalComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -17,6 +17,7 @@ export class LocaisComponent implements OnInit {
       cidade:"Contagem",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:true,
+      animaisPermitidos:["dog","cat","parrot"]
     },  
 
     {
@@ -24,6 +25,7 @@ export class LocaisComponent implements OnInit {
       cidade:"Bicas",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
+      animaisPermitidos:["cat","parrot"]
     },  
 
     {
@@ -31,6 +33,7 @@ export class LocaisComponent implements OnInit {
       cidade:"Claraval",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
+      animaisPermitidos:["dog","parrot"]
     },  
 
     {
@@ -38,6 +41,7 @@ export class LocaisComponent implements OnInit {
       cidade:"Descoberto",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:true,
+      animaisPermitidos:["parrot"]
     },  
 
     {
@@ -45,6 +49,7 @@ export class LocaisComponent implements OnInit {
       cidade:"Dom Joaquim",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:true,
+      animaisPermitidos:["dog","cat"]
     },  
 
     {
@@ -52,6 +57,7 @@ export class LocaisComponent implements OnInit {
       cidade:"Eloi Mendes",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
+      animaisPermitidos:["dog","cat","parrot"]
     },  
 
     {
@@ -59,6 +65,7 @@ export class LocaisComponent implements OnInit {
       cidade:"Fama",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
+      animaisPermitidos:["cat"]
     },  
 
     {
@@ -66,6 +73,7 @@ export class LocaisComponent implements OnInit {
       cidade:"Felixlandia",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
+      animaisPermitidos:["dog","cat","parrot"]
     },  
   ]
   
@@ -74,9 +82,27 @@ export class LocaisComponent implements OnInit {
     this.filtro = this.locais;
   }
 
-  onChange(term) {
+  onChange(event) {
+    console.log(event)
     this.filtro = this.locais.filter(local => {
-      return local.cidade.toLowerCase().indexOf(term) > -1;
+      
+      if(event.term == "" && event.animal == ""){
+        return local.cidade;
+      }else{
+
+        if (local.animaisPermitidos.includes(event.animal) && event.term == "")
+          return local.cidade;
+        
+        if(local.cidade.toLowerCase().indexOf(event.term) > -1 && event.animal == "")
+          return local.cidade
+
+        if (local.animaisPermitidos.includes(event.animal) && local.cidade.toLowerCase().indexOf(event.term) > -1)
+          return local.cidade;
+      }
+
+      
+
+
     });
   }
 

@@ -9,21 +9,22 @@ export class FormComponent implements OnInit {
 
   constructor() { }
   
-  term: string;
-  
+  term : string = "";
+  animal : string = "";
+
   animais = [
     {
-      tipo:"Cachorro",
+      tipo:"dog",
       path:"../../../assets/img/animais/dog.png",
       sound:"../../../assets/sons/animais/dog.mp3"
     },
     {
-      tipo:"Gato",
+      tipo:"cat",
       path:"../../../assets/img/animais/cat.png",
       sound:"../../../assets/sons/animais/cat.mp3"
     },
     {
-      tipo:"Papagaio",
+      tipo:"parrot",
       path:"../../../assets/img/animais/parrot.png",
       sound:"../../../assets/sons/animais/parrot.mp3"
     },
@@ -37,7 +38,12 @@ export class FormComponent implements OnInit {
   @Output() respostaTerm = new EventEmitter();
 
   feedback(event) {
-    this.respostaTerm.emit(event);
+    this.respostaTerm.emit({term:event,animal:this.animal});
+  }
+
+  setAnimal(animal){
+    this.animal = animal
+    this.feedback(this.term)
   }
 
 }

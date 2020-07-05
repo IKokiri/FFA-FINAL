@@ -1,7 +1,7 @@
-<div class="col-6 offset-3">
+<div class="col-6 offset-3 formany">
     <app-form (respostaTerm)="onChange($event)"></app-form>
 </div>
 
 <div class="row">
-    <app-local class="col-md-3 text-center" *ngFor="let local of filtro" imagem="{{local.imagem}}" ocupado="{{local.ocupado}}" cidade="{{local.cidade}}"></app-local>
+    <app-local class="col-md-3 text-center" *ngFor="let local of filtro" [animaisPermitidos]="local.animaisPermitidos" imagem="{{local.imagem}}" ocupado="{{local.ocupado}}" cidade="{{local.cidade}}"></app-local>
 </div>
