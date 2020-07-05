@@ -12,6 +12,18 @@ export class LocalComponent implements OnInit {
   @Input() cidade;
   @Input() imagem;
 
+
+  somGo(){
+    let audio = new Audio();
+    audio.src = "../../../assets/sons/animais/dogo.mp3";
+    audio.load();
+    audio.play();
+  }
+
+  enviar(){
+    this.somGo();
+  }
+
   ngOnInit(): void {
   }
 
