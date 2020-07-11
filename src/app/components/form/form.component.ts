@@ -1,4 +1,5 @@
 import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+import {DistritoService} from '../../services/distrito.service'
 
 @Component({
   selector: 'app-form',
@@ -7,10 +8,11 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private distrito: DistritoService) {}
   
   term : string = "";
   animal : string = "";
+  distritos;
 
   animais = [
     {
@@ -30,8 +32,13 @@ export class FormComponent implements OnInit {
     },
   ]
 
-  ngOnInit(): void {
-   
+  
+
+  ngOnInit(): void {    
+    
+    this.distrito.getDistritos().subscribe(data => {
+      this.distritos = data;
+    });
   }
 
   

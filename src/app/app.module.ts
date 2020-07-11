@@ -12,6 +12,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { InfoComponent } from './components/info/info.component';
 import { LocaisComponent } from './components/locais/locais.component';
 import { LocalComponent } from './components/local/local.component';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { LocalComponent } from './components/local/local.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

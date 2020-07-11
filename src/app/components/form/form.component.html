@@ -1,7 +1,10 @@
 <form>
     <div class="form-row">
         <div class="col form-group">
-            <input class="form-control" [(ngModel)]="term" (ngModelChange)="feedback($event)" type="text" name="term" placeholder="Cidade"/>
+            <!-- <input class="form-control" [(ngModel)]="term" (ngModelChange)="feedback($event)" type="text" name="term" placeholder="Cidade"/> -->
+            <select class="form-control" [(ngModel)]="term" (ngModelChange)="feedback($event)" name="term">
+                <option *ngFor="let distrito of distritos" value="{{distrito.nome}}">{{distrito.nome}}</option>
+            </select>
         </div>
     </div>
     <div class="form-row">    
