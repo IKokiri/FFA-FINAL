@@ -23,7 +23,13 @@ export class LocalComponent implements OnInit {
   }
 
   enviar(){
-    this.somGo();
+
+    if(this.ocupado == "true"){
+      alert("Local Reservado!")
+    }else{
+      this.somGo(); 
+    }
+    
   }
 
   ngOnInit(): void {
