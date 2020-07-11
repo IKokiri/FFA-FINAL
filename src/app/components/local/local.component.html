@@ -6,7 +6,7 @@
                  {{cidade}}
             </p>
           <button class="btn btn-light">
-              <img class="but" (click)="enviar()" src="../../../assets/img/kick.png" alt="Card image cap">
+              <img class="but" (click)="enviar(id)" src="../../../assets/img/kick.png" alt="Card image cap">
           </button>
         <br/>
           <img *ngFor="let animal of animaisPermitidos" src="../../../assets/img/animais/min/{{animal}}.png">
