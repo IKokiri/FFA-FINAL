@@ -3,5 +3,5 @@
 </div>
 
 <div class="row">
-    <app-local class="col-md-3 text-center" *ngFor="let local of filtro" [animaisPermitidos]="local.animaisPermitidos" imagem="{{local.imagem}}" ocupado="{{local.ocupado}}" cidade="{{local.cidade}}"></app-local>
+    <app-local (respostaOcupado)="teste($event)" class="col-md-3 text-center" *ngFor="let local of filtro" [animaisPermitidos]="local.animaisPermitidos" imagem="{{local.imagem}}" ocupado="{{local.ocupado}}" cidade="{{local.cidade}}" id="{{local.id}}"></app-local>
 </div>

@@ -21,7 +21,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
+      id:2,
       cidade:"Bicas",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
@@ -29,7 +29,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
+      id:3  ,
       cidade:"Claraval",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
@@ -37,7 +37,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
+      id:4,
       cidade:"Descoberto",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:true,
@@ -45,7 +45,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
+      id:5,
       cidade:"Dom Joaquim",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:true,
@@ -53,15 +53,15 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
-      cidade:"Eloi Mendes",
+      id:6,
+      cidade:"Mucuri",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
       animaisPermitidos:["dog","cat","parrot"]
     },  
 
     {
-      id:1,
+      id:7,
       cidade:"Fama",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
@@ -69,8 +69,8 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
-      cidade:"Felixlandia",
+      id:8,
+      cidade:"Felixlândia",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
       animaisPermitidos:["dog","cat","parrot"]
@@ -80,8 +80,21 @@ export class LocaisComponent implements OnInit {
   ngOnInit(): void {
     
     this.filtro = this.locais;
+    
   }
 
+  ocupar(id){
+
+    this.filtro = this.locais.filter(local => {
+      if(local.id == id)
+        local.ocupado = true;
+      return local
+    });
+  }
+  teste(event){ 
+    
+    this.ocupar(event)
+  }
   onChange(event) {
     
     let term = event.term.toLowerCase()
