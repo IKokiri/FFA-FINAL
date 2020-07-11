@@ -1,3 +1,7 @@
+body{
+    background-color: gray;
+}
+
 input {
     border-top: 0 !important;
     border-left: 0 !important;

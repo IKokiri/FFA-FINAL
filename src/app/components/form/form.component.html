@@ -1,21 +1,28 @@
-<form>
-    <div class="form-row">
-        <div class="col form-group">
-            <!-- <input class="form-control" [(ngModel)]="term" (ngModelChange)="feedback($event)" type="text" name="term" placeholder="Cidade"/> -->
-            <select class="form-control" [(ngModel)]="term" (ngModelChange)="feedback($event)" name="term">
-                <option *ngFor="let distrito of distritos" value="{{distrito.nome}}">{{distrito.nome}}</option>
-            </select>
-        </div>
-    </div>
-    <div class="form-row">    
-        <div class="col">
-            <input class="form-control" type="datetime" name="checkin" id="checkin" placeholder="Check-In">
-        </div>
-        <div class="col">
-            <input class="form-control" type="datetime" name="checkout" id="checkout" placeholder="Check-Out">
-        </div>
-    </div>
+<div class="container-fluid">
     <div class="row">
-        <app-animal class="col-4 text-center"  *ngFor="let animal of animais" (click)="setAnimal(animal.tipo)" sound="{{animal.sound}}" path="{{animal.path}}" tipo="{{animal.tipo}}"></app-animal>
+        <h2>Encontre o hotel ideal para seu Pet!</h2>
     </div>
-</form>
+
+    <form>
+        <div class="form-row">
+            <div class="col form-group">
+                <!-- <input class="form-control" [(ngModel)]="term" (ngModelChange)="feedback($event)" type="text" name="term" placeholder="Cidade"/> -->
+                <select class="form-control" [(ngModel)]="term" (ngModelChange)="feedback($event)" name="term">
+                    <option *ngFor="let distrito of distritos" value="{{distrito.nome}}">{{distrito.nome}}</option>
+                </select>
+            </div>  
+        </div><div class="form-row"> 
+            <div class="col">
+                <input class="form-control" type="datetime" name="checkin" id="checkin" placeholder="Check-In">              
+
+            </div>
+            <div class="col">
+                <input class="form-control" type="datetime" name="checkout" id="checkout" placeholder="Check-Out">
+            </div>
+        </div>
+
+        <div class="row">
+            <app-animal class="col-4 text-center"  *ngFor="let animal of animais" (click)="setAnimal(animal.tipo)" sound="{{animal.sound}}" path="{{animal.path}}" tipo="{{animal.tipo}}"></app-animal>
+        </div>
+    </form>
+</div>

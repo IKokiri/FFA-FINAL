@@ -1,12 +1,15 @@
 import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 import {DistritoService} from '../../services/distrito.service'
+import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-export class FormComponent implements OnInit {
+export class FormComponent implements OnInit {  
+
+  model: NgbDateStruct;
 
   constructor(private distrito: DistritoService) {}
   

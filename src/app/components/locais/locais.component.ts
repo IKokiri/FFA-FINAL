@@ -29,11 +29,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-<<<<<<< HEAD
-      id:1,
-=======
       id:1  ,
->>>>>>> 219540c4cfd2f958b4110eb164a367c34ef428b1
       cidade:"Claraval",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
@@ -58,11 +54,7 @@ export class LocaisComponent implements OnInit {
 
     {
       id:1,
-<<<<<<< HEAD
-      cidade:"Eloi Mendes",
-=======
       cidade:"Mucuri",
->>>>>>> 219540c4cfd2f958b4110eb164a367c34ef428b1
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
       animaisPermitidos:["dog","cat","parrot"]
@@ -78,11 +70,7 @@ export class LocaisComponent implements OnInit {
 
     {
       id:1,
-<<<<<<< HEAD
-      cidade:"Felixlandia",
-=======
       cidade:"Felixlândia",
->>>>>>> 219540c4cfd2f958b4110eb164a367c34ef428b1
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
       animaisPermitidos:["dog","cat","parrot"]
