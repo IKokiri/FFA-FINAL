@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "FFA-FINAL"
+    }
+  },
+  "defaultProject": "FFA-FINAL",
+  "cli": {
+    "analytics": "4b3f1a2d-2af8-4ee8-a598-104d8e3cb8df"
+  }
 }
