@@ -21,7 +21,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
+      id:2,
       cidade:"Bicas",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
@@ -29,7 +29,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1  ,
+      id:3,
       cidade:"Claraval",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
@@ -37,7 +37,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
+      id:4,
       cidade:"Descoberto",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:true,
@@ -45,7 +45,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
+      id:5,
       cidade:"Dom Joaquim",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:true,
@@ -53,7 +53,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
+      id:6,
       cidade:"Mucuri",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
@@ -61,7 +61,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
+      id:7,
       cidade:"Fama",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
@@ -69,7 +69,7 @@ export class LocaisComponent implements OnInit {
     },  
 
     {
-      id:1,
+      id:8,
       cidade:"Felixlândia",
       imagem:"../../../assets/img/locais/local.jpg",
       ocupado:false,
